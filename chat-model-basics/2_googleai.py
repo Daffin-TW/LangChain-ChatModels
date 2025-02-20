@@ -5,7 +5,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 # Load environment variables from .env
 load_dotenv()
 
-# Declare a GPT4o mini model
+# Declare a Gemini model
 model = ChatGoogleGenerativeAI(model='gemini-1.5-pro')
 
 # Send a message query and get model's result
