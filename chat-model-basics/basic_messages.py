@@ -1,12 +1,12 @@
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
 
 
 # Load environment variables from .env
 load_dotenv()
 
-# Declare a Gemini model
-model = ChatGoogleGenerativeAI(model='gemini-1.5-pro')
+# Declare a GPT 4o mini model
+model = ChatOpenAI(model='gpt-4o-mini')
 
 # Send a message query and get model's result
 query = 'Who is the third president of Indonesia?'
